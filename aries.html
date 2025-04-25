@@ -1,35 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horóscopo de Aries</title>
-    <link rel="stylesheet" href="css/aries.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Horóscopo Diario</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f2f0;
+      color: #5a2d0c;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border: 3px solid #5a2d0c;
+      position: relative;
+    }
+    .container::before, .container::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #f5f2f0;
+      border: 3px solid #5a2d0c;
+      transform: rotate(45deg);
+    }
+    .container::before {
+      top: -13px;
+      left: 30px;
+    }
+    .container::after {
+      bottom: -13px;
+      right: 30px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #a15a2c;
+      margin-bottom: 0;
+    }
+    .fecha {
+      margin: 10px 0;
+      font-style: italic;
+    }
+    .descripcion {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    .signos {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .signo {
+      padding: 10px 15px;
+      background-color: #a15a2c;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .signo:hover {
+      background-color: #5a2d0c;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Horóscopo Diario</h1>
-    </header>
-    <main class="contenedor-aries">
-        <section class="aries-box">
-            <div class="encabezado-aries">
-                <span>HOY</span>
-                <h2 id="signo-nombre">ARIES</h2>
-            </div>
+  <div class="container">
+    <h1 id="signo-nombre">ARIES</h1>
+    <div class="fecha" id="fecha">Cargando fecha...</div>
+    <div class="descripcion" id="descripcion">Cargando horóscopo...</div>
 
-            <p id="fecha" class="fecha"></p>
+    <div class="signos">
+      <button class="signo" onclick="cargarHoroscopo('aries')">Aries</button>
+      <button class="signo" onclick="cargarHoroscopo('tauro')">Tauro</button>
+      <button class="signo" onclick="cargarHoroscopo('geminis')">Géminis</button>
+      <button class="signo" onclick="cargarHoroscopo('cancer')">Cáncer</button>
+      <button class="signo" onclick="cargarHoroscopo('leo')">Leo</button>
+      <button class="signo" onclick="cargarHoroscopo('virgo')">Virgo</button>
+      <button class="signo" onclick="cargarHoroscopo('libra')">Libra</button>
+      <button class="signo" onclick="cargarHoroscopo('escorpio')">Escorpio</button>
+      <button class="signo" onclick="cargarHoroscopo('sagitario')">Sagitario</button>
+      <button class="signo" onclick="cargarHoroscopo('capricornio')">Capricornio</button>
+      <button class="signo" onclick="cargarHoroscopo('acuario')">Acuario</button>
+      <button class="signo" onclick="cargarHoroscopo('piscis')">Piscis</button>
+    </div>
+  </div>
 
-            <div class="descripcion-aries">
-                <p id="descripcion">Cargando horóscopo...</p>
-            </div>
-        </section>
-    </main>
+  <script>
+    async function cargarHoroscopo(signo) {
+      try {
+        const res = await fetch(`https://horoscope-app-api.vercel.app/api/v1/get-horoscope/daily?sign=${signo}&lang=es`);
+        const data = await res.json();
 
-    <footer>
-        <p>&copy; 2025 Horóscopos</p>
-    </footer>
+        document.getElementById('signo-nombre').innerText = signo.toUpperCase();
+        
+        const fecha = new Date();
+        const fechaFormateada = fecha.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
-    <script src="js/script.js"></script>
+        document.getElementById('fecha').innerText = fechaFormateada;
+        document.getElementById('descripcion').innerText = data.horoscope;
+      } catch (error) {
+        document.getElementById('descripcion').innerText = "No se pudo cargar el horóscopo. Inténtalo más tarde.";
+      }
+    }
+
+    // Al cargar la página, mostrar Aries
+    cargarHoroscopo('aries');
+  </script>
+
 </body>
 </html>

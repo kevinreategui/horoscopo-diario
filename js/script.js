@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const signo = 'aries'; // signo fijo para esta página
-    const proxyUrl = 'https://modern-mint-club.glitch.me/horoscope'; // tu URL de Glitch
+    const signo = 'aries';
+    const proxyUrl = 'https://modern-mint-club.glitch.me/horoscope'; // tu proxy en Glitch
 
     fetch(`${proxyUrl}?signo=${signo}`)
         .then(response => {
@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(data => {
-            // Formatear la fecha en español
             const fechaHoy = new Date().toLocaleDateString('es-ES', {
                 weekday: 'long',
                 year: 'numeric',
@@ -18,14 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 day: 'numeric'
             });
 
-            // Mostrar la fecha en el elemento con id "fecha"
             document.getElementById("fecha").textContent = fechaHoy;
-
-            // Mostrar la descripción del horóscopo en el elemento con id "descripcion"
-            document.getElementById("descripcion").textContent = data.horoscope;
+            document.getElementById("horoscopo").textContent = data.horoscope;
         })
         .catch(error => {
-            console.error("Error al obtener el horóscopo:", error);
-            document.getElementById("descripcion").textContent = "No se pudo cargar el horóscopo. Intenta más tarde.";
+            console.error("Error al cargar el horóscopo:", error);
+            document.getElementById("horoscopo").textContent = "No se pudo cargar el horóscopo hoy. Intenta más tarde.";
         });
 });

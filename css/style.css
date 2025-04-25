@@ -1,0 +1,80 @@
+/* Reseteo de márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Sección de signos */
+.signos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem;
+}
+
+/* Estilo individual de cada signo */
+.signo {
+    width: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.signo span {
+    display: block;
+    font-size: 1rem;
+    color: #000; /* texto negro */
+    font-weight: bold;
+}
+
+/* Efecto hover */
+.signo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #fff;
+    margin-top: 2rem;
+}

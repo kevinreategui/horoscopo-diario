@@ -2,12 +2,15 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aries - Horóscopo del Amor</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
   <style>
-    /* Estilos específicos para aries.html */
+    body {
+      background-color: #fdfaf7;
+    }
+
     .aries-portada {
       display: flex;
       align-items: center;
@@ -19,6 +22,7 @@
       border-radius: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       flex-wrap: wrap;
+      height: 400px;
     }
 
     .aries-texto {
@@ -46,43 +50,72 @@
       max-width: 100%;
     }
 
-    .aries-seccion {
-      background-color: white;
-      padding: 1.5rem;
-      margin: 1rem auto;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      max-width: 800px;
-    }
-
-    .aries-seccion h2 {
-      color: #ff6347;
-      margin-bottom: 0.5rem;
-    }
-
     @media (max-width: 768px) {
       .aries-portada {
         flex-direction: column;
         text-align: center;
+        height: auto;
       }
 
       .aries-img img {
-        width: 200px;
+        width: 150px;
         margin-top: 1rem;
       }
+
+      .aries-texto h1 {
+        font-size: 2rem;
+      }
+
+      .aries-texto p {
+        font-size: 1rem;
+      }
+    }
+
+    .aries-bloques {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 2rem auto;
+      gap: 1rem;
+    }
+
+    .aries-bloque {
+      flex: 1 1 calc(33.333% - 1rem);
+      background-color: white;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      min-width: 250px;
+    }
+
+    .aries-bloque h2 {
+      color: #ff6347;
+      margin-bottom: 0.5rem;
+    }
+
+    .aries-frase {
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: #fff8f2;
+      border-left: 5px solid #ff6347;
+      padding: 1.5rem;
+      font-size: 1.3rem;
+      font-style: italic;
+      text-align: center;
+      border-radius: 1rem;
     }
   </style>
 </head>
 
 <body>
-
-  <!-- Menú común -->
+  <!-- Menú -->
   <header class="menu">
     <div class="contenedor-menu">
       <div class="logo">Horóscopo</div>
       <nav class="nav">
         <ul class="menu-links">
-          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="#">Signos</a></li>
           <li><a href="#">Mi experiencia</a></li>
           <li><a href="#">Trabajo de amor</a></li>
@@ -92,7 +125,19 @@
       <div class="hamburguesa" onclick="toggleMenu()">☰</div>
     </div>
   </header>
-
+  <section class="portada">
+    <div class="portada-contenido">
+      <div class="texto">
+        <h2>Horóscopo del Amor</h2>
+        <p>Descubre lo que los astros tienen reservado para ti en el amor. Compatibilidades, consejos y
+          predicciones para tu signo zodiacal.</p>
+        <a href="#" class="btn">Ver mi signo</a>
+      </div>
+      <div class="imagen">
+        <img src="img/perfil.png" alt="Imagen de horóscopo">
+      </div>
+    </div>
+  </section>
   <!-- Portada Aries -->
   <section class="aries-portada">
     <div class="aries-texto">
@@ -101,32 +146,53 @@
         compatibilidad con otros signos.</p>
     </div>
     <div class="aries-img">
-      <img src="img/aries.png" alt="Signo Aries">
+      <img src="img/aries.png" alt="Signo Aries" />
     </div>
   </section>
 
-  <!-- Sección de características -->
-  <section class="aries-seccion">
-    <h2>Características de Aries</h2>
-    <p>Aries es valiente, impulsivo, directo y tiene un fuerte deseo de aventura. Es idealista, pero a veces puede ser
-      impaciente y testarudo.</p>
+  <!-- Dos filas de 3 bloques -->
+  <section class="aries-bloques">
+    <div class="aries-bloque">
+      <h2>Características</h2>
+      <p>Valientes, impulsivos y muy directos. Aries ama los retos y siempre busca ser el primero en todo.</p>
+    </div>
+    <div class="aries-bloque">
+      <h2>Compatibilidad Amorosa</h2>
+      <p>Mejor con Leo, Sagitario y Géminis. Aries se lleva bien con signos de fuego y aire.</p>
+    </div>
+    <div class="aries-bloque">
+      <h2>Consejo del Día</h2>
+      <p>Escucha tu intuición, no te apresures. A veces, esperar es más sabio que actuar rápido.</p>
+    </div>
+    <div class="aries-bloque">
+      <h2>En el Amor</h2>
+      <p>Apasionados, intensos y protectores. Buscan una pareja que los motive y los rete.</p>
+    </div>
+    <div class="aries-bloque">
+      <h2>Desafíos Emocionales</h2>
+      <p>La impaciencia y la necesidad de tener siempre la razón puede causar fricciones en sus relaciones.</p>
+    </div>
+    <div class="aries-bloque">
+      <h2>Pareja Ideal</h2>
+      <p>Alguien independiente, valiente y que no tema seguirle el ritmo en la vida y el amor.</p>
+    </div>
   </section>
 
+  <!-- Frase motivacional -->
+  <section class="aries-frase">
+    <p>"La energía de Aries no conoce límites. ¡Hoy conquista tus sueños!"</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Horóscopo del Amor. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script del menú -->
   <script>
     function toggleMenu() {
       const menu = document.querySelector('.menu-links');
       menu.classList.toggle('mostrar');
-    }
-    function mostrarCompatibilidad() {
-      const signo1 = document.getElementById("signo1").value;
-      const signo2 = document.getElementById("signo2").value;
-      const resultado = document.getElementById("resultado");
-
-      if (signo1 && signo2) {
-        resultado.textContent = `¡${signo1} y ${signo2} tienen una conexión especial! ❤️`;
-      } else {
-        resultado.textContent = "Por favor selecciona ambos signos.";
-      }
     }
   </script>
 </body>

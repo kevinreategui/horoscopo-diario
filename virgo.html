@@ -4,101 +4,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aries - Horóscopo del Amor</title>
+  <title>Virgo - Horóscopo del Amor</title>
   <meta name="description"
-    content="Descubre el horóscopo del amor para Aries. Compatibilidades, características, consejos y predicciones para este signo apasionado y valiente.">
+    content="Descubre el horóscopo del amor para Virgo. Analítico, leal y práctico, aprende cómo es Virgo en el amor.">
   <meta name="keywords"
-    content="Aries, horóscopo Aries, signo Aries, amor Aries, compatibilidad Aries, astrología Aries, horóscopo diario, signos zodiacales, fuego">
+    content="Virgo, horóscopo virgo, signo virgo, amor virgo, compatibilidad virgo, astrología virgo, horóscopo diario, signos zodiacales, tierra">
   <meta name="author" content="Horóscopo del Amor">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Aries - Horóscopo del Amor">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Virgo - Horóscopo del Amor">
   <meta property="og:description"
-    content="Conoce cómo es Aries en el amor: intenso, valiente y apasionado. Descubre tu compatibilidad y recibe consejos diarios.">
-  <meta property="og:image" content="https://kevinreategui.github.io/horoscopo-diario/img/aries.png">
-  <meta property="og:url" content="https://kevinreategui.github.io/horoscopo-diario/aries.html">
+    content="Virgo, signo perfeccionista y leal. Descubre tu compatibilidad amorosa, consejos y predicciones diarias.">
+  <meta property="og:image" content="https://kevinreategui.github.io/horoscopo-diario/img/virgo.png">
+  <meta property="og:url" content="https://kevinreategui.github.io/horoscopo-diario/virgo.html">
   <meta property="og:type" content="website">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Aries - Horóscopo del Amor">
+  <meta name="twitter:title" content="Virgo - Horóscopo del Amor">
   <meta name="twitter:description"
-    content="Descubre cómo es Aries en el amor, con consejos, compatibilidades y predicciones diarias.">
-  <meta name="twitter:image" content="https://kevinreategui.github.io/horoscopo-diario/img/aries.png">
+    content="Descubre cómo es Virgo en el amor, con consejos, compatibilidades y predicciones diarias.">
+  <meta name="twitter:image" content="https://kevinreategui.github.io/horoscopo-diario/img/virgo.png">
 
-  <!-- Favicon -->
-  <link rel="icon" href="https://kevinreategui.github.io/horoscopo-diario/img/aries.png" type="image/png">
-
-  <!-- Estilos -->
+  <link rel="icon" href="https://kevinreategui.github.io/horoscopo-diario/img/virgo.png" type="image/png">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <style>
     body {
       background-color: #fdfaf7;
     }
 
-    .aries-portada {
+    .virgo-portada {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #fff8f2;
+      background-color: #f3f0e8;
       padding: 1rem;
       max-width: 1200px;
       margin: 2rem auto;
       border-radius: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       flex-wrap: wrap;
-      height: auto;
     }
 
-    .aries-texto {
+    .virgo-texto {
       flex: 1;
       padding: 1rem;
       text-align: center;
     }
 
-    .aries-texto h1 {
+    .virgo-texto h1 {
       font-size: 2.5rem;
-      color: #ff6347;
+      color: #8c7c5a;
     }
 
-    .aries-texto p {
+    .virgo-texto p {
       font-size: 1.2rem;
       margin-top: 0.5rem;
     }
 
-    .aries-img {
+    .virgo-img {
       flex: 1;
       text-align: center;
     }
 
-    .aries-img img {
+    .virgo-img img {
       width: 250px;
       max-width: 100%;
     }
 
     @media (max-width: 768px) {
-      .aries-portada {
+      .virgo-portada {
         flex-direction: column;
-        text-align: center;
       }
 
-      .aries-img img {
+      .virgo-img img {
         width: 150px;
         margin-top: 1rem;
       }
 
-      .aries-texto h1 {
+      .virgo-texto h1 {
         font-size: 2rem;
-      }
-
-      .aries-texto p {
-        font-size: 1rem;
       }
     }
 
-    .aries-bloques {
+    .virgo-bloques {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -107,7 +99,7 @@
       gap: 1rem;
     }
 
-    .aries-bloque {
+    .virgo-bloque {
       flex: 1 1 calc(33.333% - 1rem);
       background-color: white;
       padding: 1rem;
@@ -116,21 +108,21 @@
       min-width: 250px;
     }
 
-    .aries-bloque h2 {
-      color: #ff6347;
+    .virgo-bloque h2 {
+      color: #8c7c5a;
       margin-bottom: 0.5rem;
       font-size: 1.2rem;
     }
 
-    .aries-bloque h2 i {
+    .virgo-bloque h2 i {
       margin-right: 0.5rem;
     }
 
-    .aries-frase {
+    .virgo-frase {
       max-width: 800px;
       margin: 2rem auto;
-      background-color: #fff8f2;
-      border-left: 5px solid #ff6347;
+      background-color: #f3f0e8;
+      border-left: 5px solid #8c7c5a;
       padding: 1.5rem;
       font-size: 1.3rem;
       font-style: italic;
@@ -157,6 +149,8 @@
       <div class="hamburguesa" onclick="toggleMenu()">☰</div>
     </div>
   </header>
+
+  <!-- Portada general -->
   <section class="portada">
     <div class="portada-contenido">
       <div class="texto">
@@ -171,49 +165,48 @@
     </div>
   </section>
 
-  <!-- Portada Aries -->
-  <section class="aries-portada">
-    <div class="aries-texto">
-      <h1>Aries</h1>
-      <p>Aries es un signo de fuego, lleno de energía, iniciativa y pasión. Descubre cómo influye Aries en el amor y la
-        compatibilidad con otros signos.</p>
+  <!-- Portada Virgo -->
+  <section class="virgo-portada">
+    <div class="virgo-texto">
+      <h1>Virgo</h1>
+      <p>Virgo es meticuloso, analítico y leal. Busca relaciones estables y sinceras basadas en el compromiso y el respeto mutuo.</p>
     </div>
-    <div class="aries-img">
-      <img src="img/aries.png" alt="Signo Aries" />
+    <div class="virgo-img">
+      <img src="img/virgo.png" alt="Signo Virgo" />
     </div>
   </section>
 
-  <!-- Dos filas de 3 bloques -->
-  <section class="aries-bloques">
-    <div class="aries-bloque">
+  <!-- Bloques Virgo -->
+  <section class="virgo-bloques">
+    <div class="virgo-bloque">
       <h2><i class="fas fa-star"></i>Características</h2>
-      <p>Valientes, impulsivos y muy directos. Aries ama los retos y siempre busca ser el primero en todo.</p>
+      <p>Organizado, metódico y detallista. Virgo siempre busca mejorar y cuidar a quienes ama.</p>
     </div>
-    <div class="aries-bloque">
+    <div class="virgo-bloque">
       <h2><i class="fas fa-heart"></i>Compatibilidad Amorosa</h2>
-      <p>Mejor con Leo, Sagitario y Géminis. Aries se lleva bien con signos de fuego y aire.</p>
+      <p>Alta compatibilidad con Tauro, Capricornio y Cáncer. Necesita seguridad emocional para abrirse.</p>
     </div>
-    <div class="aries-bloque">
+    <div class="virgo-bloque">
       <h2><i class="fas fa-lightbulb"></i>Consejo del Día</h2>
-      <p>Escucha tu intuición, no te apresures. A veces, esperar es más sabio que actuar rápido.</p>
+      <p>No sobreanalices tanto los sentimientos, deja que tu intuición también tenga voz.</p>
     </div>
-    <div class="aries-bloque">
+    <div class="virgo-bloque">
       <h2><i class="fas fa-fire"></i>En el Amor</h2>
-      <p>Apasionados, intensos y protectores. Buscan una pareja que los motive y los rete.</p>
+      <p>Cuidadoso y comprometido. Virgo demuestra su amor con acciones más que con palabras.</p>
     </div>
-    <div class="aries-bloque">
+    <div class="virgo-bloque">
       <h2><i class="fas fa-exclamation-circle"></i>Desafíos Emocionales</h2>
-      <p>La impaciencia y la necesidad de tener siempre la razón puede causar fricciones en sus relaciones.</p>
+      <p>Su perfeccionismo puede causar exigencias excesivas hacia la pareja o frustración interior.</p>
     </div>
-    <div class="aries-bloque">
+    <div class="virgo-bloque">
       <h2><i class="fas fa-user-friends"></i>Pareja Ideal</h2>
-      <p>Alguien independiente, valiente y que no tema seguirle el ritmo en la vida y el amor.</p>
+      <p>Alguien comprensivo, práctico y emocionalmente estable que sepa valorar los pequeños gestos.</p>
     </div>
   </section>
 
   <!-- Frase motivacional -->
-  <section class="aries-frase">
-    <p>"La energía de Aries no conoce límites. ¡Hoy conquista tus sueños!"</p>
+  <section class="virgo-frase">
+    <p>"La perfección no está en lo que ves, Virgo, sino en cómo amas sin buscar reconocimiento."</p>
   </section>
 
   <!-- Footer -->
@@ -221,11 +214,9 @@
     <p>&copy; 2025 Horóscopo del Amor. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Script del menú -->
   <script>
     function toggleMenu() {
-      const menu = document.querySelector('.menu-links');
-      menu.classList.toggle('mostrar');
+      document.querySelector('.menu-links').classList.toggle('mostrar');
     }
   </script>
 </body>

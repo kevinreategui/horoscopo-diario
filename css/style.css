@@ -19,7 +19,7 @@
     background-color: #ff6347;
     color: white;
     padding: 2rem 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
   
   header h1 {
@@ -37,7 +37,7 @@
     background-color: #ff6347;
     color: white;
     padding: 1rem 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
   
   .contenedor-menu {
@@ -106,7 +106,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0 10px;
   }
   
   .portada-contenido {
@@ -164,10 +164,8 @@
   /* MÓVIL */
   @media (max-width: 768px) {
     .portada-contenido {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
+      text-align: center;
     }
   
     .portada .imagen img {
@@ -180,7 +178,7 @@
     }
   
     .portada .texto p {
-      font-size: 12px;
+      font-size: 0.9rem;
     }
   
     .portada .btn {
@@ -188,7 +186,6 @@
       font-size: 0.9rem;
     }
   }
-  
   
   /* SIGNOS */
   .signos {
@@ -203,7 +200,7 @@
     width: 150px;
     background-color: white;
     border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     text-align: center;
     padding: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -240,7 +237,7 @@
     max-width: 1000px;
     margin: 0 auto;
     border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     flex-wrap: wrap;
   }
   
@@ -278,7 +275,8 @@
       text-align: center;
     }
   
-    .texto-consejo, .imagen-consejo {
+    .texto-consejo,
+    .imagen-consejo {
       flex: 1 1 100%;
       padding: 0.5rem;
     }

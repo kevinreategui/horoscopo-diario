@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aries - Horóscopo del Amor</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       background-color: #fdfaf7;
@@ -22,12 +23,13 @@
       border-radius: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       flex-wrap: wrap;
-      height: 400px;
+      height: auto;
     }
 
     .aries-texto {
       flex: 1;
       padding: 1rem;
+      text-align: center;
     }
 
     .aries-texto h1 {
@@ -54,7 +56,6 @@
       .aries-portada {
         flex-direction: column;
         text-align: center;
-        height: auto;
       }
 
       .aries-img img {
@@ -92,6 +93,11 @@
     .aries-bloque h2 {
       color: #ff6347;
       margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .aries-bloque h2 i {
+      margin-right: 0.5rem;
     }
 
     .aries-frase {
@@ -127,17 +133,18 @@
   </header>
   <section class="portada">
     <div class="portada-contenido">
-      <div class="texto">
-        <h2>Horóscopo del Amor</h2>
-        <p>Descubre lo que los astros tienen reservado para ti en el amor. Compatibilidades, consejos y
-          predicciones para tu signo zodiacal.</p>
-        <a href="#" class="btn">Ver mi signo</a>
-      </div>
-      <div class="imagen">
-        <img src="img/perfil.png" alt="Imagen de horóscopo">
-      </div>
+        <div class="texto">
+            <h2>Horóscopo del Amor</h2>
+            <p>Descubre lo que los astros tienen reservado para ti en el amor. Compatibilidades, consejos y
+                predicciones para tu signo zodiacal.</p>
+            <a href="#" class="btn">Ver mi signo</a>
+        </div>
+        <div class="imagen">
+            <img src="img/perfil.png" alt="Imagen de horóscopo">
+        </div>
     </div>
-  </section>
+</section>
+
   <!-- Portada Aries -->
   <section class="aries-portada">
     <div class="aries-texto">
@@ -153,27 +160,27 @@
   <!-- Dos filas de 3 bloques -->
   <section class="aries-bloques">
     <div class="aries-bloque">
-      <h2>Características</h2>
+      <h2><i class="fas fa-star"></i>Características</h2>
       <p>Valientes, impulsivos y muy directos. Aries ama los retos y siempre busca ser el primero en todo.</p>
     </div>
     <div class="aries-bloque">
-      <h2>Compatibilidad Amorosa</h2>
+      <h2><i class="fas fa-heart"></i>Compatibilidad Amorosa</h2>
       <p>Mejor con Leo, Sagitario y Géminis. Aries se lleva bien con signos de fuego y aire.</p>
     </div>
     <div class="aries-bloque">
-      <h2>Consejo del Día</h2>
+      <h2><i class="fas fa-lightbulb"></i>Consejo del Día</h2>
       <p>Escucha tu intuición, no te apresures. A veces, esperar es más sabio que actuar rápido.</p>
     </div>
     <div class="aries-bloque">
-      <h2>En el Amor</h2>
+      <h2><i class="fas fa-fire"></i>En el Amor</h2>
       <p>Apasionados, intensos y protectores. Buscan una pareja que los motive y los rete.</p>
     </div>
     <div class="aries-bloque">
-      <h2>Desafíos Emocionales</h2>
+      <h2><i class="fas fa-exclamation-circle"></i>Desafíos Emocionales</h2>
       <p>La impaciencia y la necesidad de tener siempre la razón puede causar fricciones en sus relaciones.</p>
     </div>
     <div class="aries-bloque">
-      <h2>Pareja Ideal</h2>
+      <h2><i class="fas fa-user-friends"></i>Pareja Ideal</h2>
       <p>Alguien independiente, valiente y que no tema seguirle el ritmo en la vida y el amor.</p>
     </div>
   </section>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Experiencia - Horóscopo del Amor</title>
+  <meta name="description" content="Conoce mi experiencia personal con el horóscopo y cómo ha influido en mi vida amorosa y espiritual.">
+  <meta name="keywords" content="mi experiencia, horóscopo, amor, astrología, signos zodiacales, crecimiento personal">
+  <meta name="author" content="Horóscopo del Amor">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Mi Experiencia - Horóscopo del Amor">
+  <meta property="og:description" content="Conoce cómo el horóscopo me ayudó a descubrir el amor, a comprenderme y guiarme.">
+  <meta property="og:image" content="https://kevinreategui.github.io/horoscopo-diario/img/perfil.png">
+  <meta property="og:url" content="https://kevinreategui.github.io/horoscopo-diario/experiencia.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mi Experiencia - Horóscopo del Amor">
+  <meta name="twitter:description" content="Una historia de crecimiento personal y conexión con el universo a través del horóscopo.">
+  <meta name="twitter:image" content="https://kevinreategui.github.io/horoscopo-diario/img/perfil.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://kevinreategui.github.io/horoscopo-diario/img/perfil.png" type="image/png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .experiencia-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff8f2;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      flex-wrap: wrap;
+    }
+
+    .experiencia-texto {
+      flex: 1;
+      padding: 1rem;
+      min-width: 280px;
+    }
+
+    .experiencia-texto h1 {
+      color: #e5533c;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .experiencia-texto p {
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .experiencia-imagen {
+      flex: 1;
+      text-align: center;
+      min-width: 280px;
+    }
+
+    .experiencia-imagen img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .experiencia-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .experiencia-texto h1 {
+        font-size: 2rem;
+      }
+
+      .experiencia-texto p {
+        font-size: 1rem;
+      }
+
+      .experiencia-imagen img {
+        width: 80%;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Menú -->
+  <header class="menu">
+    <div class="contenedor-menu">
+      <div class="logo">Horóscopo</div>
+      <nav class="nav">
+        <ul class="menu-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="signos.html">Signos</a></li>
+          <li><a href="experiencia.html">Mi experiencia</a></li>
+          <li><a href="trabajos-de-amor.html">Trabajo de amor</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+
+  <!-- Sección de Experiencia -->
+  <section class="experiencia-section">
+    <div class="experiencia-texto">
+      <h1>Mi experiencia</h1>
+      <p style="text-align: justify;">Desde hace más de una década, me dedico con devoción y compromiso a ayudar a personas que enfrentan dificultades en el amor. A lo largo de los años, he perfeccionado técnicas ancestrales y modernas, combinando sabiduría espiritual, rituales energéticos y guía emocional. Mis especialidades son los amarres de amor para unir parejas separadas, los retornos de pareja para recuperar a esa persona especial, la lectura de tarot como herramienta de autoconocimiento y dirección, y los trabajos para el alejamiento de amantes o terceras personas que interfieren en una relación.</p>
+      <p style="text-align: justify;">Mi enfoque es profundamente humano: cada caso es único y merece atención personalizada. Escucho con empatía, respeto la privacidad, y brindo soluciones efectivas desde el primer contacto. Los resultados que he obtenido con cientos de personas son mi mejor carta de presentación. Si tu corazón necesita sanar o recuperar lo que has perdido, puedo ayudarte con responsabilidad, honestidad y energía positiva.</p>
+    </div>
+    <div class="experiencia-imagen">
+      <img src="img/perfil.png" alt="Mi experiencia personal con el horóscopo">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Horóscopo del Amor. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón flotante -->
+  <div class="boton-kevin" onclick="toggleTablaKevin()">Pregúntale al Maestro Kevin</div>
+
+  <!-- Tarjeta flotante -->
+  <div class="tarjeta-kevin" id="tarjetaKevin">
+    <h3>Maestro Kevin</h3>
+    <p>Astólogo y Vidente</p>
+    <a href="https://wa.me/593123456789?text=Hola%20Maestro%20Kevin,%20quiero%20una%20consulta" target="_blank"
+      class="btn-wsp">Enviar mensaje por WhatsApp</a>
+  </div>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu-links');
+      menu.classList.toggle('mostrar');
+    }
+    function toggleTablaKevin() {
+      const tarjeta = document.getElementById("tarjetaKevin");
+      tarjeta.style.display = tarjeta.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+
+</html>

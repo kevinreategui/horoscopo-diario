@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Horóscopo del Amor</title>
+  <meta name="description" content="Contáctame por WhatsApp para recibir ayuda espiritual en el amor.">
+  <meta name="keywords" content="contacto whatsapp, maestro kevin, amarres, amor, espiritualidad">
+  <meta name="author" content="Horóscopo del Amor">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contacto - Horóscopo del Amor">
+  <meta property="og:description" content="Comunícate con el Maestro Kevin por WhatsApp y recibe guía espiritual.">
+  <meta property="og:image" content="https://kevinreategui.github.io/horoscopo-diario/img/perfil.png">
+  <meta property="og:url" content="https://kevinreategui.github.io/horoscopo-diario/contacto.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://kevinreategui.github.io/horoscopo-diario/img/perfil.png" type="image/png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .contacto-section {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #fff8f2;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .contacto-section h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #e5533c;
+      margin-bottom: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid #f1d6c6;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    td:first-child {
+      font-weight: bold;
+      color: #bf3927;
+      width: 40%;
+    }
+
+    .boton-whatsapp {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-color: #25D366;
+      color: white;
+      padding: 0.9rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-whatsapp:hover {
+      background-color: #1ebe5b;
+    }
+
+    @media (max-width: 600px) {
+      .contacto-section {
+        padding: 1rem;
+      }
+
+      table td {
+        padding: 0.7rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Menú -->
+  <header class="menu">
+    <div class="contenedor-menu">
+      <div class="logo">Horóscopo</div>
+      <nav class="nav">
+        <ul class="menu-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="signos.html">Signos</a></li>
+          <li><a href="experiencia.html">Mi experiencia</a></li>
+          <li><a href="trabajos-de-amor.html">Trabajo de amor</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+
+  <!-- Sección de contacto -->
+  <section class="contacto-section">
+    <h1>Contáctame</h1>
+    <table>
+      <tr>
+        <td>Nombre</td>
+        <td>Maestro Kevin</td>
+      </tr>
+      <tr>
+        <td>Experiencia</td>
+        <td>Amplia experiencia en trabajos de amor, amarres, retornos de pareja y alejamiento de terceros.</td>
+      </tr>
+      <tr>
+        <td>WhatsApp</td>
+        <td>+51 957 092 224</td>
+      </tr>
+    </table>
+
+    <a class="boton-whatsapp" href="https://wa.me/51957092224" target="_blank">
+      <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Horóscopo del Amor. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón flotante -->
+  <div class="boton-kevin" onclick="toggleTablaKevin()">Pregúntale al Maestro Kevin</div>
+
+  <!-- Tarjeta flotante -->
+  <div class="tarjeta-kevin" id="tarjetaKevin">
+    <h3>Maestro Kevin</h3>
+    <p>Astólogo y Vidente</p>
+    <a href="https://wa.me/593123456789?text=Hola%20Maestro%20Kevin,%20quiero%20una%20consulta" target="_blank"
+      class="btn-wsp">Enviar mensaje por WhatsApp</a>
+  </div>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu-links');
+      menu.classList.toggle('mostrar');
+    }
+    function toggleTablaKevin() {
+      const tarjeta = document.getElementById("tarjetaKevin");
+      tarjeta.style.display = tarjeta.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+
+</html>

@@ -361,4 +361,124 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  
+  /* whatpp*/
+  .boton-kevin {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d4af37;
+    color: #000;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+.boton-kevin:hover {
+    background-color: #c29e2f;
+}
+
+.tarjeta-kevin {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    padding: 20px;
+    width: 250px;
+    display: none;
+    z-index: 999;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.tarjeta-kevin h3 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    color: #d4af37;
+}
+
+.tarjeta-kevin p {
+    margin: 0 0 15px;
+    color: #555;
+}
+
+.btn-wsp {
+    background-color: #25d366;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-wsp:hover {
+    background-color: #1ebd5a;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/*slider testimonio*/
+.testimonios-blog {
+  padding: 50px 20px;
+  background-color: #fffdf8;
+  text-align: center;
+}
+
+.testimonios-blog h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.testimonios-carrusel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.testimonios-carrusel::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonio-item {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  min-width: 220px;
+  max-width: 220px;
+  scroll-snap-align: center;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.testimonio-item:hover {
+  transform: scale(1.03);
+}
+
+.testimonio-item h4 {
+  font-size: 1.1em;
+  color: #b58b0d;
+  margin-bottom: 10px;
+}
+
+.testimonio-item p {
+  font-size: 0.95em;
+  color: #444;
+  line-height: 1.4;
+}

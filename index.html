@@ -5,14 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Horóscopo Diario del Amor</title>
-    <meta name="description" content="Consulta tu horóscopo diario del amor. Descubre la compatibilidad entre signos, consejos personalizados y predicciones románticas para cada signo zodiacal.">
-    <meta name="keywords" content="horóscopo diario, amor, signos zodiacales, compatibilidad, astrología, horóscopo del amor, predicciones amorosas, test compatibilidad, pareja">
+    <meta name="description"
+        content="Consulta tu horóscopo diario del amor. Descubre la compatibilidad entre signos, consejos personalizados y predicciones románticas para cada signo zodiacal.">
+    <meta name="keywords"
+        content="horóscopo diario, amor, signos zodiacales, compatibilidad, astrología, horóscopo del amor, predicciones amorosas, test compatibilidad, pareja">
     <meta name="author" content="Horóscopo del Amor">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Horóscopo Diario del Amor" />
-    <meta property="og:description" content="Descubre qué dicen los astros sobre tu vida amorosa. Predicciones y compatibilidades para cada signo zodiacal.">
+    <meta property="og:description"
+        content="Descubre qué dicen los astros sobre tu vida amorosa. Predicciones y compatibilidades para cada signo zodiacal.">
     <meta property="og:image" content="https://kevinreategui.github.io/horoscopo-diario/img/perfil.png" />
     <meta property="og:url" content="https://kevinreategui.github.io/horoscopo-diario/" />
     <meta property="og:type" content="website" />
@@ -20,7 +23,8 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Horóscopo Diario del Amor" />
-    <meta name="twitter:description" content="Consulta tu horóscopo del amor diario y descubre tu compatibilidad con otros signos.">
+    <meta name="twitter:description"
+        content="Consulta tu horóscopo del amor diario y descubre tu compatibilidad con otros signos.">
     <meta name="twitter:image" content="https://kevinreategui.github.io/horoscopo-diario/img/perfil.png" />
 
     <!-- Favicon -->
@@ -38,16 +42,15 @@
             <nav class="nav">
                 <ul class="menu-links">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Signos</a></li>
-                    <li><a href="#">Mi experiencia</a></li>
-                    <li><a href="#">Trabajo de amor</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="signos.html">Signos</a></li>
+                    <li><a href="experiencia.html">Mi experiencia</a></li>
+                    <li><a href="trabajos-de-amor.html">Trabajo de amor</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
             <div class="hamburguesa" onclick="toggleMenu()">☰</div>
         </div>
     </header>
-
     <section class="portada">
         <div class="portada-contenido">
             <div class="texto">
@@ -164,10 +167,22 @@
         </div>
     </section>
     <!--compatibilidad-->
+    <!--testimonio-->
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2025 Horóscopo del Amor. Todos los derechos reservados.</p>
     </footer>
+    <!-- Botón flotante -->
+    <div class="boton-kevin" onclick="toggleTablaKevin()">Pregúntale al Maestro Kevin</div>
+
+    <!-- Tarjeta flotante -->
+    <div class="tarjeta-kevin" id="tarjetaKevin">
+        <h3>Maestro Kevin</h3>
+        <p>Astólogo y Vidente</p>
+        <a href="https://wa.me/51957092224?text=Hola%20Maestro%20Kevin,%20quiero%20una%20consulta" target="_blank"
+            class="btn-wsp">Enviar mensaje por WhatsApp</a>
+    </div>
+
     <script>
         function toggleMenu() {
             const menu = document.querySelector('.menu-links');
@@ -183,6 +198,10 @@
             } else {
                 resultado.textContent = "Por favor selecciona ambos signos.";
             }
+        }
+        function toggleTablaKevin() {
+            const tarjeta = document.getElementById("tarjetaKevin");
+            tarjeta.style.display = tarjeta.style.display === "block" ? "none" : "block";
         }
     </script>
 

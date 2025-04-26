@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leo - Horóscopo del Amor</title>
-  <meta name="description"
-    content="Descubre el horóscopo del amor para Leo. Fuerte, apasionado y carismático, aprende cómo es Leo en el amor.">
-  <meta name="keywords"
-    content="Leo, horóscopo leo, signo leo, amor leo, compatibilidad leo, astrología leo, horóscopo diario, signos zodiacales, fuego">
+  <title>Sagitario - Horóscopo del Amor</title>
+  <meta name="description" content="Descubre el horóscopo del amor para Sagitario. Aventurero, optimista y sincero. Conoce cómo es Sagitario en el amor.">
+  <meta name="keywords" content="Sagitario, horóscopo Sagitario, signo Sagitario, amor Sagitario, compatibilidad Sagitario, astrología Sagitario, horóscopo diario, signos zodiacales, fuego">
   <meta name="author" content="Horóscopo del Amor">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Leo - Horóscopo del Amor">
-  <meta property="og:description"
-    content="Leo, signo apasionado y radiante. Descubre tu compatibilidad amorosa, consejos y predicciones diarias.">
-  <meta property="og:image" content="https://kevinreategui.github.io/horoscopo-diario/img/leo.png">
-  <meta property="og:url" content="https://kevinreategui.github.io/horoscopo-diario/leo.html">
+  <meta property="og:title" content="Sagitario - Horóscopo del Amor">
+  <meta property="og:description" content="Descubre cómo es Sagitario en el amor: libre, optimista y apasionado. Compatibilidades, consejos y más.">
+  <meta property="og:image" content="https://kevinreategui.github.io/horoscopo-diario/img/sagitario.png">
+  <meta property="og:url" content="https://kevinreategui.github.io/horoscopo-diario/sagitario.html">
   <meta property="og:type" content="website">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Leo - Horóscopo del Amor">
-  <meta name="twitter:description"
-    content="Descubre cómo es Leo en el amor, con consejos, compatibilidades y predicciones diarias.">
-  <meta name="twitter:image" content="https://kevinreategui.github.io/horoscopo-diario/img/leo.png">
+  <meta name="twitter:title" content="Sagitario - Horóscopo del Amor">
+  <meta name="twitter:description" content="Sagitario en el amor: optimismo, libertad y verdad. Compatibilidades y consejos diarios.">
+  <meta name="twitter:image" content="https://kevinreategui.github.io/horoscopo-diario/img/sagitario.png">
 
-  <!-- Favicon -->
-  <link rel="icon" href="https://kevinreategui.github.io/horoscopo-diario/img/leo.png" type="image/png">
-
-  <!-- Estilos -->
+  <link rel="icon" href="https://kevinreategui.github.io/horoscopo-diario/img/sagitario.png" type="image/png">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
-      background-color: #fffaf8;
+      background-color: #fdfaf7;
     }
 
-    .leo-portada {
+    .sagitario-portada {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #fff3e5;
+      background-color: #fff8f2;
       padding: 1rem;
       max-width: 1200px;
       margin: 2rem auto;
@@ -52,53 +42,53 @@
       height: auto;
     }
 
-    .leo-texto {
+    .sagitario-texto {
       flex: 1;
       padding: 1rem;
       text-align: center;
     }
 
-    .leo-texto h1 {
+    .sagitario-texto h1 {
       font-size: 2.5rem;
-      color: #e09132;
+      color: #e67e22;
     }
 
-    .leo-texto p {
+    .sagitario-texto p {
       font-size: 1.2rem;
       margin-top: 0.5rem;
     }
 
-    .leo-img {
+    .sagitario-img {
       flex: 1;
       text-align: center;
     }
 
-    .leo-img img {
+    .sagitario-img img {
       width: 250px;
       max-width: 100%;
     }
 
     @media (max-width: 768px) {
-      .leo-portada {
+      .sagitario-portada {
         flex-direction: column;
         text-align: center;
       }
 
-      .leo-img img {
+      .sagitario-img img {
         width: 150px;
         margin-top: 1rem;
       }
 
-      .leo-texto h1 {
+      .sagitario-texto h1 {
         font-size: 2rem;
       }
 
-      .leo-texto p {
+      .sagitario-texto p {
         font-size: 1rem;
       }
     }
 
-    .leo-bloques {
+    .sagitario-bloques {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -107,7 +97,7 @@
       gap: 1rem;
     }
 
-    .leo-bloque {
+    .sagitario-bloque {
       flex: 1 1 calc(33.333% - 1rem);
       background-color: white;
       padding: 1rem;
@@ -116,21 +106,21 @@
       min-width: 250px;
     }
 
-    .leo-bloque h2 {
-      color: #e09132;
+    .sagitario-bloque h2 {
+      color: #e67e22;
       margin-bottom: 0.5rem;
       font-size: 1.2rem;
     }
 
-    .leo-bloque h2 i {
+    .sagitario-bloque h2 i {
       margin-right: 0.5rem;
     }
 
-    .leo-frase {
+    .sagitario-frase {
       max-width: 800px;
       margin: 2rem auto;
-      background-color: #fff3e5;
-      border-left: 5px solid #e09132;
+      background-color: #fff8f2;
+      border-left: 5px solid #e67e22;
       padding: 1.5rem;
       font-size: 1.3rem;
       font-style: italic;
@@ -141,7 +131,6 @@
 </head>
 
 <body>
-  <!-- Menú -->
   <header class="menu">
     <div class="contenedor-menu">
         <div class="logo">Horóscopo</div>
@@ -158,48 +147,48 @@
     </div>
 </header>
 
-  <!-- Portada Leo -->
-  <section class="leo-portada">
-    <div class="leo-texto">
-      <h1>Leo</h1>
-      <p>Leo es un signo de fuego, carismático, orgulloso y lleno de energía. Ama con pasión y necesita sentirse admirado.</p>
+  <!-- Portada Sagitario -->
+  <section class="sagitario-portada">
+    <div class="sagitario-texto">
+      <h1>Sagitario</h1>
+      <p>Sagitario es un signo libre, aventurero y siempre en busca de nuevas experiencias. Descubre cómo es en el amor y con qué signos conecta mejor.</p>
     </div>
-    <div class="leo-img">
-      <img src="img/leo.png" alt="Signo Leo" />
+    <div class="sagitario-img">
+      <img src="img/sagitario.png" alt="Signo Sagitario" />
     </div>
   </section>
 
-  <!-- Bloques Leo -->
-  <section class="leo-bloques">
-    <div class="leo-bloque">
+  <!-- Bloques -->
+  <section class="sagitario-bloques">
+    <div class="sagitario-bloque">
       <h2><i class="fas fa-star"></i>Características</h2>
-      <p>Líder nato, creativo y seguro. Leo destaca en cualquier entorno por su presencia y entusiasmo.</p>
+      <p>Aventurero, honesto y optimista. Sagitario ama la libertad y la verdad.</p>
     </div>
-    <div class="leo-bloque">
+    <div class="sagitario-bloque">
       <h2><i class="fas fa-heart"></i>Compatibilidad Amorosa</h2>
-      <p>Alta compatibilidad con Aries, Sagitario y Libra. Busca parejas que lo admiren y valoren su autenticidad.</p>
+      <p>Mejor con Aries, Leo y Acuario. Sagitario se siente cómodo con signos que respetan su espacio.</p>
     </div>
-    <div class="leo-bloque">
+    <div class="sagitario-bloque">
       <h2><i class="fas fa-lightbulb"></i>Consejo del Día</h2>
-      <p>Recuerda que el amor no siempre se trata de brillar, también de escuchar y compartir desde el corazón.</p>
+      <p>Reflexiona antes de hablar. La sinceridad es virtud, pero también lo es la empatía.</p>
     </div>
-    <div class="leo-bloque">
+    <div class="sagitario-bloque">
       <h2><i class="fas fa-fire"></i>En el Amor</h2>
-      <p>Apasionado, generoso y protector. Leo ama con intensidad y entrega total cuando confía en su pareja.</p>
+      <p>Divertido y apasionado, pero necesita sentirse libre para amar plenamente.</p>
     </div>
-    <div class="leo-bloque">
+    <div class="sagitario-bloque">
       <h2><i class="fas fa-exclamation-circle"></i>Desafíos Emocionales</h2>
-      <p>El orgullo y la necesidad de atención pueden afectar sus relaciones si no hay equilibrio emocional.</p>
+      <p>Puede parecer distante o poco comprometido si siente que pierde su independencia.</p>
     </div>
-    <div class="leo-bloque">
+    <div class="sagitario-bloque">
       <h2><i class="fas fa-user-friends"></i>Pareja Ideal</h2>
-      <p>Alguien que admire su fuerza interior y sepa brindarle amor sincero sin competir por protagonismo.</p>
+      <p>Alguien positivo, aventurero y que comparta su amor por la libertad y el crecimiento.</p>
     </div>
   </section>
 
   <!-- Frase motivacional -->
-  <section class="leo-frase">
-    <p>"Ama con el fuego que te caracteriza, Leo, pero no olvides que el amor verdadero también se nutre de humildad."</p>
+  <section class="sagitario-frase">
+    <p>"El mundo es tu escenario, Sagitario. Vive, ama y explora sin miedo."</p>
   </section>
 
   <!-- Footer -->
@@ -227,5 +216,4 @@
     }
   </script>
 </body>
-
 </html>

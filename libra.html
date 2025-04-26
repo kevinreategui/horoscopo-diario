@@ -136,35 +136,19 @@
   <!-- Menú -->
   <header class="menu">
     <div class="contenedor-menu">
-      <div class="logo">Horóscopo</div>
-      <nav class="nav">
-        <ul class="menu-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#">Signos</a></li>
-          <li><a href="#">Mi experiencia</a></li>
-          <li><a href="#">Trabajo de amor</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-      <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+        <div class="logo">Horóscopo</div>
+        <nav class="nav">
+            <ul class="menu-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="signos.html">Signos</a></li>
+                <li><a href="experiencia.html">Mi experiencia</a></li>
+                <li><a href="trabajos-de-amor.html">Trabajo de amor</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hamburguesa" onclick="toggleMenu()">☰</div>
     </div>
-  </header>
-
-  <!-- Portada general -->
-  <section class="portada">
-    <div class="portada-contenido">
-      <div class="texto">
-        <h2>Horóscopo del Amor</h2>
-        <p>Descubre lo que los astros tienen reservado para ti en el amor. Compatibilidades, consejos y
-          predicciones para tu signo zodiacal.</p>
-        <a href="#" class="btn">Ver mi signo</a>
-      </div>
-      <div class="imagen">
-        <img src="img/perfil.png" alt="Imagen de horóscopo">
-      </div>
-    </div>
-  </section>
-
+</header>
   <!-- Portada Libra -->
   <section class="libra-portada">
     <div class="libra-texto">
@@ -213,10 +197,24 @@
   <footer class="footer">
     <p>&copy; 2025 Horóscopo del Amor. Todos los derechos reservados.</p>
   </footer>
+  <!-- Botón flotante -->
+  <div class="boton-kevin" onclick="toggleTablaKevin()">Pregúntale al Maestro Kevin</div>
 
+  <!-- Tarjeta flotante -->
+  <div class="tarjeta-kevin" id="tarjetaKevin">
+    <h3>Maestro Kevin</h3>
+    <p>Astólogo y Vidente</p>
+    <a href="https://wa.me/593123456789?text=Hola%20Maestro%20Kevin,%20quiero%20una%20consulta" target="_blank"
+      class="btn-wsp">Enviar mensaje por WhatsApp</a>
+  </div>
   <script>
     function toggleMenu() {
-      document.querySelector('.menu-links').classList.toggle('mostrar');
+      const menu = document.querySelector('.menu-links');
+      menu.classList.toggle('mostrar');
+    }
+    function toggleTablaKevin() {
+      const tarjeta = document.getElementById("tarjetaKevin");
+      tarjeta.style.display = tarjeta.style.display === "block" ? "none" : "block";
     }
   </script>
 </body>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signos del Zodiaco en el Amor - Horóscopo Diario</title>
+    <meta name="description"
+        content="Conoce cómo se comporta cada signo del zodiaco en el amor. Descubre el lado romántico de Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario y Piscis.">
+    <meta name="keywords"
+        content="signos del zodiaco, horóscopo del amor, compatibilidad amorosa, signos zodiacales, cómo ama cada signo, amor y astrología">
+    <meta name="author" content="Horóscopo Diario">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #fdfaf7;
+            font-family: Arial, sans-serif;
+        }
+
+        .signos-contenedor {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .signo-tarjeta {
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .signo-tarjeta:hover {
+            transform: translateY(-5px);
+        }
+
+        .signo-tarjeta img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background-color: #fff8f2;
+            padding: 1rem;
+        }
+
+        .signo-contenido {
+            padding: 1rem;
+        }
+
+        .signo-contenido h2 {
+            color: #ff6347;
+            margin-bottom: 0.5rem;
+        }
+
+        .signo-contenido p {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .signo-contenido a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #ff6347;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .signo-contenido a:hover {
+            background-color: #e5533c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menú (si deseas puedes incluir el mismo de tu sitio principal) -->
+    <header class="menu">
+        <div class="contenedor-menu">
+            <div class="logo">Horóscopo</div>
+            <nav class="nav">
+                <ul class="menu-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="signos.html">Signos</a></li>
+                    <li><a href="experiencia.html">Mi experiencia</a></li>
+                    <li><a href="trabajos-de-amor.html">Trabajo de amor</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+    <section class="signos-contenedor">
+        <!-- Aries -->
+        <div class="signo-tarjeta">
+            <img src="img/aries.png" alt="Signo Aries">
+            <div class="signo-contenido">
+                <h2>Aries</h2>
+                <p>Apasionado, valiente y lleno de energía. Siempre va un paso adelante en el amor.</p>
+                <a href="aries.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Tauro -->
+        <div class="signo-tarjeta">
+            <img src="img/tauro.png" alt="Signo Tauro">
+            <div class="signo-contenido">
+                <h2>Tauro</h2>
+                <p>Estable, leal y romántico. Ama con intensidad y sin prisas.</p>
+                <a href="tauro.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Géminis -->
+        <div class="signo-tarjeta">
+            <img src="img/geminis.png" alt="Signo Géminis">
+            <div class="signo-contenido">
+                <h2>Géminis</h2>
+                <p>Curioso y comunicativo. Busca conexiones mentales y emocionales.</p>
+                <a href="geminis.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Cáncer -->
+        <div class="signo-tarjeta">
+            <img src="img/cancer.png" alt="Signo Cáncer">
+            <div class="signo-contenido">
+                <h2>Cáncer</h2>
+                <p>Emocional, protector y sensible. Entrega todo su corazón cuando ama.</p>
+                <a href="cancer.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Leo -->
+        <div class="signo-tarjeta">
+            <img src="img/leo.png" alt="Signo Leo">
+            <div class="signo-contenido">
+                <h2>Leo</h2>
+                <p>Brillante y apasionado. Ama intensamente y necesita sentirse especial.</p>
+                <a href="leo.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Virgo -->
+        <div class="signo-tarjeta">
+            <img src="img/virgo.png" alt="Signo Virgo">
+            <div class="signo-contenido">
+                <h2>Virgo</h2>
+                <p>Analítico y leal. Ama de forma práctica pero profundamente sincera.</p>
+                <a href="virgo.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Libra -->
+        <div class="signo-tarjeta">
+            <img src="img/libra.png" alt="Signo Libra">
+            <div class="signo-contenido">
+                <h2>Libra</h2>
+                <p>Romántico y equilibrado. Busca armonía y belleza en el amor.</p>
+                <a href="libra.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Escorpio -->
+        <div class="signo-tarjeta">
+            <img src="img/scorpio.png" alt="Signo Escorpio">
+            <div class="signo-contenido">
+                <h2>Escorpio</h2>
+                <p>Intenso, misterioso y emocional. Ama con pasión y entrega total.</p>
+                <a href="escorpio.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Sagitario -->
+        <div class="signo-tarjeta">
+            <img src="img/sagitario.png" alt="Signo Sagitario">
+            <div class="signo-contenido">
+                <h2>Sagitario</h2>
+                <p>Aventurero y optimista. Busca libertad y diversión en el amor.</p>
+                <a href="sagitario.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Capricornio -->
+        <div class="signo-tarjeta">
+            <img src="img/capricornio.png" alt="Signo Capricornio">
+            <div class="signo-contenido">
+                <h2>Capricornio</h2>
+                <p>Reservado y firme. Ama con seriedad, compromiso y constancia.</p>
+                <a href="capricornio.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Acuario -->
+        <div class="signo-tarjeta">
+            <img src="img/acuario.png" alt="Signo Acuario">
+            <div class="signo-contenido">
+                <h2>Acuario</h2>
+                <p>Independiente, original y libre. Busca conexión mental y emocional.</p>
+                <a href="acuario.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Piscis -->
+        <div class="signo-tarjeta">
+            <img src="img/piscis.png" alt="Signo Piscis">
+            <div class="signo-contenido">
+                <h2>Piscis</h2>
+                <p>Sensible y soñador. Ama con el alma y se entrega completamente.</p>
+                <a href="piscis.html">Ver más</a>
+            </div>
+        </div>
+
+
+        <!-- Aquí puedes copiar y pegar más bloques para los otros signos -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Horóscopo del Amor. Todos los derechos reservados.</p>
+    </footer>
+  <!-- Botón flotante -->
+  <div class="boton-kevin" onclick="toggleTablaKevin()">Pregúntale al Maestro Kevin</div>
+
+  <!-- Tarjeta flotante -->
+  <div class="tarjeta-kevin" id="tarjetaKevin">
+    <h3>Maestro Kevin</h3>
+    <p>Astólogo y Vidente</p>
+    <a href="https://wa.me/593123456789?text=Hola%20Maestro%20Kevin,%20quiero%20una%20consulta" target="_blank"
+      class="btn-wsp">Enviar mensaje por WhatsApp</a>
+  </div>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu-links');
+      menu.classList.toggle('mostrar');
+    }
+    function toggleTablaKevin() {
+      const tarjeta = document.getElementById("tarjetaKevin");
+      tarjeta.style.display = tarjeta.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+
+</html>

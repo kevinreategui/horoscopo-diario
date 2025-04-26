@@ -311,7 +311,7 @@
   /* SIGNOS */
 .signos {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     padding: 2rem;
     justify-content: center;
@@ -352,13 +352,13 @@
   /* Responsive */
   @media (max-width: 768px) {
     .signos {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
   
   @media (max-width: 480px) {
     .signos {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   

@@ -9,66 +9,160 @@
 </head>
 
 <body>
-    <header>
-        <h1>Horóscopo Diario</h1>
-        <p>Consulta diaria para cada signo zodiacal</p>
+    <header class="menu">
+        <div class="contenedor-menu">
+            <div class="logo">Horóscopo</div>
+            <nav class="nav">
+                <ul class="menu-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Signos</a></li>
+                    <li><a href="#">Mi experiencia</a></li>
+                    <li><a href="#">Trabajo de amor</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+        </div>
     </header>
 
-    <section class="signos">
-        <div class="signo">
-            <img src="img/aries.png" alt="Aries">
-            <span>Aries</span>
-        </div>
-        <div class="signo">
-            <img src="img/tauro.png" alt="Tauro">
-            <span>Tauro</span>
-        </div>
-        <div class="signo">
-            <img src="img/geminis.png" alt="Géminis">
-            <span>Géminis</span>
-        </div>
-        <div class="signo">
-            <img src="img/cancer.png" alt="Cáncer">
-            <span>Cáncer</span>
-        </div>
-        <div class="signo">
-            <img src="img/leo.png" alt="Leo">
-            <span>Leo</span>
-        </div>
-        <div class="signo">
-            <img src="img/virgo.png" alt="Virgo">
-            <span>Virgo</span>
-        </div>
-        <div class="signo">
-            <img src="img/libra.png" alt="Libra">
-            <span>Libra</span>
-        </div>
-        <div class="signo">
-            <img src="img/scorpio.png" alt="Escorpio">
-            <span>Escorpio</span>
-        </div>
-        <div class="signo">
-            <img src="img/sagitario.png" alt="Sagitario">
-            <span>Sagitario</span>
-        </div>
-        <div class="signo">
-            <img src="img/capricornio.png" alt="Capricornio">
-            <span>Capricornio</span>
-        </div>
-        <div class="signo">
-            <img src="img/acuario.png" alt="Acuario">
-            <span>Acuario</span>
-        </div>
-        <div class="signo">
-            <img src="img/piscis.png" alt="Piscis">
-            <span>Piscis</span>
+    <section class="portada">
+        <div class="portada-contenido">
+            <div class="texto">
+                <h2>Horóscopo del Amor</h2>
+                <p>Descubre lo que los astros tienen reservado para ti en el amor. Compatibilidades, consejos y
+                    predicciones para tu signo zodiacal.</p>
+                <a href="#" class="btn">Ver mi signo</a>
+            </div>
+            <div class="imagen">
+                <img src="img/perfil.png" alt="Imagen de horóscopo">
+            </div>
         </div>
     </section>
+    <section class="signos">
+        <a href="aries.html" class="signo">
+            <img src="img/aries.png" alt="Aries">
+            <span>Aries</span>
+        </a>
+        <a href="#" class="signo">
+            <img src="img/tauro.png" alt="Tauro">
+            <span>Tauro</span>
+        </a>
+        <a href="#" class="signo">
+            <img src="img/geminis.png" alt="Géminis">
+            <span>Géminis</span>
+        </a>
+        <a href="#" class="signo">
+            <img src="img/cancer.png" alt="Cáncer">
+            <span>Cáncer</span>
+        </a>
+        <a href="#" class="signo">
+            <img src="img/leo.png" alt="Leo">
+            <span>Leo</span>
+        </a>
+        <a href="#" class="signo">
+            <img src="img/virgo.png" alt="Virgo">
+            <span>Virgo</span>
+        </a>
+        <a href="#" class="signo">
+            <img src="img/libra.png" alt="Libra">
+            <span>Libra</span>
+        </a>
+        <a href="#" class="signo">
+            <img src="img/scorpio.png" alt="Escorpio">
+            <span>Escorpio</span>
+        </a>
+        <a href="#" class="signo">
+            <img src="img/sagitario.png" alt="Sagitario">
+            <span>Sagitario</span>
+        </a>
+        <a href="#" class="signo">
+            <img src="img/capricornio.png" alt="Capricornio">
+            <span>Capricornio</span>
+        </a>
+        <a href="#" class="signo">
+            <img src="img/acuario.png" alt="Acuario">
+            <span>Acuario</span>
+        </a>
+        <a href="#" class="signo">
+            <img src="img/piscis.png" alt="Piscis">
+            <span>Piscis</span>
+        </a>
+    </section>
+    <section class="consejo-dia">
+        <div class="texto-consejo">
+            <h2>Consejo del día</h2>
+            <p>Confía en tu intuición, hoy las estrellas están de tu lado. Toma decisiones con el corazón.</p>
+        </div>
+        <div class="imagen-consejo">
+            <img src="img/maestrokevin.png" alt="Maestro Kevin">
+        </div>
+    </section>
+    <!--compatibilidad-->
+    <section class="compatibilidad-test">
+        <div class="contenedor-test">
+            <h2>Test de Compatibilidad</h2>
+            <p>Selecciona dos signos para conocer su compatibilidad en el amor.</p>
+            <div class="seleccion">
+                <select id="signo1">
+                    <option value="">Tu signo</option>
+                    <option value="Aries">Aries</option>
+                    <option value="Tauro">Tauro</option>
+                    <option value="Géminis">Géminis</option>
+                    <option value="Cáncer">Cáncer</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Virgo">Virgo</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Escorpio">Escorpio</option>
+                    <option value="Sagitario">Sagitario</option>
+                    <option value="Capricornio">Capricornio</option>
+                    <option value="Acuario">Acuario</option>
+                    <option value="Piscis">Piscis</option>
+                </select>
 
+                <select id="signo2">
+                    <option value="">Pareja</option>
+                    <option value="Aries">Aries</option>
+                    <option value="Tauro">Tauro</option>
+                    <option value="Géminis">Géminis</option>
+                    <option value="Cáncer">Cáncer</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Virgo">Virgo</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Escorpio">Escorpio</option>
+                    <option value="Sagitario">Sagitario</option>
+                    <option value="Capricornio">Capricornio</option>
+                    <option value="Acuario">Acuario</option>
+                    <option value="Piscis">Piscis</option>
+                </select>
+
+                <button onclick="mostrarCompatibilidad()">Ver compatibilidad</button>
+            </div>
+            <div id="resultado"></div>
+        </div>
+    </section>
+    <!--compatibilidad-->
 
     <footer>
         <p>&copy; 2025 Horóscopo Diario | Todos los derechos reservados</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-links');
+            menu.classList.toggle('mostrar');
+        }
+        function mostrarCompatibilidad() {
+            const signo1 = document.getElementById("signo1").value;
+            const signo2 = document.getElementById("signo2").value;
+            const resultado = document.getElementById("resultado");
+
+            if (signo1 && signo2) {
+                resultado.textContent = `¡${signo1} y ${signo2} tienen una conexión especial! ❤️`;
+            } else {
+                resultado.textContent = "Por favor selecciona ambos signos.";
+            }
+        }
+    </script>
+
 </body>
 
 </html>

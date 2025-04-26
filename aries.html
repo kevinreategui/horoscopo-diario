@@ -1,62 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horóscopo de Aries</title>
-  <link rel="stylesheet" href="css/aries.css">
+  <title>Aries - Horóscopo del Amor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Estilos específicos para aries.html */
+    .aries-portada {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff8f2;
+      padding: 1rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      flex-wrap: wrap;
+    }
+
+    .aries-texto {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    .aries-texto h1 {
+      font-size: 2.5rem;
+      color: #ff6347;
+    }
+
+    .aries-texto p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .aries-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .aries-img img {
+      width: 250px;
+      max-width: 100%;
+    }
+
+    .aries-seccion {
+      background-color: white;
+      padding: 1.5rem;
+      margin: 1rem auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      max-width: 800px;
+    }
+
+    .aries-seccion h2 {
+      color: #ff6347;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .aries-portada {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .aries-img img {
+        width: 200px;
+        margin-top: 1rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Horóscopo Diario</h1>
+  <!-- Menú común -->
+  <header class="menu">
+    <div class="contenedor-menu">
+      <div class="logo">Horóscopo</div>
+      <nav class="nav">
+        <ul class="menu-links">
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="#">Signos</a></li>
+          <li><a href="#">Mi experiencia</a></li>
+          <li><a href="#">Trabajo de amor</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+    </div>
   </header>
 
-  <main class="contenedor-aries">
-    <section class="aries-box">
-      <div class="encabezado-aries">
-        <span>HOY</span>
-        <h2 id="signo-nombre">ARIES</h2>
-      </div>
+  <!-- Portada Aries -->
+  <section class="aries-portada">
+    <div class="aries-texto">
+      <h1>Aries</h1>
+      <p>Aries es un signo de fuego, lleno de energía, iniciativa y pasión. Descubre cómo influye Aries en el amor y la
+        compatibilidad con otros signos.</p>
+    </div>
+    <div class="aries-img">
+      <img src="img/aries.png" alt="Signo Aries">
+    </div>
+  </section>
 
-      <p id="fecha" class="fecha">Cargando fecha...</p>
-
-      <div class="descripcion-aries">
-        <p id="descripcion">Cargando horóscopo...</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Horóscopos</p>
-  </footer>
+  <!-- Sección de características -->
+  <section class="aries-seccion">
+    <h2>Características de Aries</h2>
+    <p>Aries es valiente, impulsivo, directo y tiene un fuerte deseo de aventura. Es idealista, pero a veces puede ser
+      impaciente y testarudo.</p>
+  </section>
 
   <script>
-    const signo = "aries";
-    const API_KEY = "NlkK7g1OZVIjVAO8hHSuzw==6no7AGCGxpmnndnK";
-    const url = `https://api.api-ninjas.com/v1/horoscope?sign=${signo}`;
+    function toggleMenu() {
+      const menu = document.querySelector('.menu-links');
+      menu.classList.toggle('mostrar');
+    }
+    function mostrarCompatibilidad() {
+      const signo1 = document.getElementById("signo1").value;
+      const signo2 = document.getElementById("signo2").value;
+      const resultado = document.getElementById("resultado");
 
-    fetch(url, {
-      method: "GET",
-      headers: {
-        "X-Api-Key": API_KEY
+      if (signo1 && signo2) {
+        resultado.textContent = `¡${signo1} y ${signo2} tienen una conexión especial! ❤️`;
+      } else {
+        resultado.textContent = "Por favor selecciona ambos signos.";
       }
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Error: " + response.status);
-      }
-      return response.json();
-    })
-    .then(data => {
-      document.getElementById("descripcion").textContent = data.horoscope;
-      document.getElementById("fecha").textContent = `Fecha: ${data.date}`;
-    })
-    .catch(error => {
-      console.error("Error al obtener el horóscopo:", error);
-      document.getElementById("descripcion").textContent = "No se pudo cargar el horóscopo.";
-    });
+    }
   </script>
-
 </body>
+
 </html>

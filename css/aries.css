@@ -1,77 +1,69 @@
-/* Estilo general */
+/* Estilos generales */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #fffdf8;
-    color: #2c2c2c;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-}
-
-header, footer {
-    background-color: #b20000;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f2;
+    color: #333;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #ff6347;
     color: white;
     text-align: center;
-    padding: 1rem 0;
-}
-
-h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-main.contenedor-aries {
-    max-width: 900px;
-    margin: auto;
-    padding: 2rem;
-}
-
-/* Secciones */
-section {
-    background-color: #fff;
-    border-left: 5px solid #b20000;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  /* Contenedor principal */
+  .contenedor-aries {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Secciones */
+  section {
     margin-bottom: 2rem;
+    background: white;
     padding: 1.5rem;
-    transition: 0.3s ease-in-out;
-}
-
-section:hover {
-    transform: translateY(-3px);
-}
-
-h2 {
-    color: #b20000;
-    margin-top: 0;
-}
-
-/* Listas */
-ul {
-    padding-left: 1.2rem;
-}
-
-ul li {
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  section h2 {
+    color: #ff6347;
     margin-bottom: 0.5rem;
-}
-
-/* Footer */
-footer p {
-    margin: 0;
+  }
+  
+  /* Compatibilidad lista */
+  .compatibilidad ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .compatibilidad li {
+    margin: 0.5rem 0;
+  }
+  
+  /* Pie de página */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffe3d9;
+    color: #333;
     font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    body {
-        padding: 0 1rem;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    main.contenedor-aries {
-        padding: 1rem;
-    }
-}
+    margin-top: 3rem;
+  }
+  
